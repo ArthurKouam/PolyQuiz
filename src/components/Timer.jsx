@@ -3,7 +3,7 @@ export const Timer = ({ timeLeft }) => {
   const seconds = timeLeft % 60;
   return (
     <div className="timer">
-      ⏳ {minutes}:{seconds < 10 ? `0${seconds}` : seconds}
+      {minutes}:{seconds < 10 ? `0${seconds}` : seconds}
     </div>
   );
 };

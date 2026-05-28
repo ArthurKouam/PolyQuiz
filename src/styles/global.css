@@ -67,18 +67,18 @@ button:hover {
 
 .notebook-bg {
   width: 100%;
-  max-width: 700px;
-  min-height: 600px;
+  height: 100vh;
   background: repeating-linear-gradient(
     to bottom,
     #ffffff,
     #ffffff 30px,
     #d7e7ff 31px
   );
-  border-radius: 20px;
+  border-radius: 0;
   padding: 40px;
   position: relative;
-  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+  box-shadow: none;
+  margin: 0;
 }
 
 .notebook-bg::before {
