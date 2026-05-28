@@ -1,0 +1,62 @@
+[
+  {
+    "question": "Quel pilote détient le record du plus grand nombre de titres mondiaux en Formule 1 ?",
+    "options": ["Michael Schumacher", "Lewis Hamilton", "Ayrton Senna", "Sebastian Vettel"],
+    "bonne_reponse": "Lewis Hamilton",
+    "category": "Formule 1"
+  },
+  {
+    "question": "Quelle écurie a remporté le plus de championnats constructeurs en F1 ?",
+    "options": ["Ferrari", "Mercedes", "Red Bull", "McLaren"],
+    "bonne_reponse": "Ferrari",
+    "category": "Formule 1"
+  },
+  {
+    "question": "Quel pilote MotoGP est surnommé 'The Doctor' ?",
+    "options": ["Valentino Rossi", "Marc Marquez", "Jorge Lorenzo", "Casey Stoner"],
+    "bonne_reponse": "Valentino Rossi",
+    "category": "Moto GP"
+  },
+  {
+    "question": "Quelle est la cylindrée des motos en MotoGP depuis 2012 ?",
+    "options": ["800cc", "1000cc", "1200cc", "600cc"],
+    "bonne_reponse": "1000cc",
+    "category": "Moto GP"
+  },
+  {
+    "question": "Quel constructeur domine actuellement la MotoGP ?",
+    "options": ["Yamaha", "Honda", "Ducati", "Kawasaki"],
+    "bonne_reponse": "Ducati",
+    "category": "Moto GP"
+  },
+  {
+    "question": "Qui a marqué le plus de points en carrière en NBA ?",
+    "options": ["Michael Jordan", "LeBron James", "Kobe Bryant", "Kareem Abdul-Jabbar"],
+    "bonne_reponse": "LeBron James",
+    "category": "NBA"
+  },
+  {
+    "question": "Quelle équipe a remporté le plus de titres NBA ?",
+    "options": ["Los Angeles Lakers", "Boston Celtics", "Golden State Warriors", "Chicago Bulls"],
+    "bonne_reponse": "Boston Celtics",
+    "category": "NBA"
+  },
+  {
+    "question": "Quel joueur japonais est devenu une légende du baseball aux États-Unis ?",
+    "options": ["Ichiro Suzuki", "Hideki Okajima", "Yu Darvish", "Shohei Ohtani"],
+    "bonne_reponse": "Ichiro Suzuki",
+    "category": "Culture Japonaise"
+  },
+  {
+    "question": "Quel est le nom du festival traditionnel japonais des cerisiers en fleurs ?",
+    "options": ["Hanami", "Matsuri", "Obon", "Shogatsu"],
+    "bonne_reponse": "Hanami",
+    "category": "Culture Japonaise"
+  },
+  {
+    "question": "Quel art martial japonais utilise principalement des techniques de projection et de contrôle au sol ?",
+    "options": ["Karate", "Judo", "Kendo", "Aikido"],
+    "bonne_reponse": "Judo",
+    "category": "Culture Japonaise"
+  }
+]
