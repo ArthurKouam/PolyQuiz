@@ -4,6 +4,7 @@ import { useFetch } from "../hooks/useFetch";
 import { Timer } from "../components/Timer";
 import { QuizCard } from "../components/QuizCard";
 import { useUser } from "../context/UserContext";
+import { API_ENDPOINTS } from "../config/apiConfig";
 
 const initialState = {
   currentQuestion: 0,
@@ -34,7 +35,7 @@ const quizReducer = (state, action) => {
 };
 
 const QuizEngine = () => {
-  const { data, loading, error } = useFetch("/questions.json");
+  const { data, loading, error } = useFetch(API_ENDPOINTS.QUESTIONS);
   const [state, dispatch] = useReducer(quizReducer, initialState);
   const [timeLeft, setTimeLeft] = useState(60);
   const timerRef = useRef(null);
@@ -47,7 +48,6 @@ const QuizEngine = () => {
   } = useUser();
 
   useEffect(() => {
-    setTimeLeft(60);
     timerRef.current = setInterval(() => {
       setTimeLeft((prev) => {
         if (prev <= 1) {
@@ -59,7 +59,7 @@ const QuizEngine = () => {
       });
     }, 1000);
     return () => clearInterval(timerRef.current);
-  }, [state.currentQuestion]);
+  }, []);
 
   useEffect(() => {
     if (state.finished && data.length > 0) {
@@ -88,7 +88,7 @@ const QuizEngine = () => {
       type: "ANSWER_QUESTION",
       payload: {
         selected: selectedOption,
-        correct: question.bonne_reponse,
+        correct: question.correctAnswer,
         total: data.length,
       },
     });

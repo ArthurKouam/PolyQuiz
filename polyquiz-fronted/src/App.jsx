@@ -3,6 +3,7 @@ import { UserProvider } from "./context/UserContext";
 import Home from "./pages/Home";
 import QuizEngine from "./pages/QuizEngine";
 import Results from "./pages/Results";
+import Leaderboard from "./pages/Leaderboard";
 import "./App.css";
 
 const router = createBrowserRouter([
@@ -17,6 +18,10 @@ const router = createBrowserRouter([
   {
     path: "/resultats",
     element: <Results />,
+  },
+  {
+    path: "/leaderboard",
+    element: <Leaderboard />,
   },
 ]);
 
